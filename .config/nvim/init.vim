@@ -59,6 +59,14 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <Leader>[[ :NERDTreeToggle<CR>
 map <Leader>ff :NERDTreeFocus<CR>
 
+" Open CHADTree with <Leader>[[ and focus with <Leader>ff
+" map <Leader>[[ :CHADopen<CR>
+
+" Custom CHADTree shortcuts
+" lua vim.api.nvim_set_var("chadtree_settings", {keymap = { primary = {"o"}}})
+" lua vim.api.nvim_set_var("chadtree_settings", {keymap = { v_split = {"W"}}})
+" lua vim.api.nvim_set_var("chadtree_settings", {keymap = { h_split = {"I"}}})
+
 " Airline
 let g:airline_powerline_fonts=1
 let g:airline_theme='badwolf'
@@ -174,6 +182,9 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+" Set python path for faster startup when switching between virtualenvs
+let g:python3_host_prog = '/Users/ziyadalyafi/.pyenv/versions/py3nvim/bin/python'
+
 
 " Plugins with vim-plug
 call plug#begin('~/.config/nvim/plugged')
@@ -207,6 +218,10 @@ Plug 'mhinz/vim-signify'
 Plug 'scrooloose/nerdtree'
 Plug 'xuyuanp/nerdtree-git-plugin' " git status flag support
 
+" CHADTree - Better NERDTree - TODO: Figure out how to fix shortcuts and
+" configuration
+" Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': ':UpdateRemotePlugins'}
+
 " Comment things quickly
 Plug 'tyru/caw.vim'
 
@@ -228,6 +243,7 @@ Plug 'xolox/vim-misc'
 
 " Conquerer or Completetion for autocompletion using LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
 
 " Scala Syntax Highlighting
 Plug 'derekwyatt/vim-scala'
@@ -245,5 +261,11 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " multiple entries/exits into/from insert mode whereas <C-G>c in insert mode
 " will only hold caps lock within the current insert 'session'.
 Plug 'https://github.com/tpope/vim-capslock'
+
+" Markdown Preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
+" Rust support
+Plug 'rust-lang/rust.vim'
 
 call plug#end()

@@ -1,1 +1,6 @@
-{"dependencies":{}}
+{
+  "dependencies": {
+    "coc-python": ">=1.2.12",
+    "coc-rls": ">=1.1.6"
+  }
+}

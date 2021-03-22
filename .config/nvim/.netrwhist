@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/soloman_davis/.local/lib/python2.7/site-packages/powerline/config_files'
-let g:netrw_dirhist_2='/home/soloman_davis/.local/lib/python2.7/site-packages/powerline/config_files/colorschemes'
-let g:netrw_dirhist_3='/home/soloman_davis/.config/nvim'
-let g:netrw_dirhist_4='/home/soloman_davis/Documents/roadsailer/test'
-let g:netrw_dirhist_5='/home/soloman_davis/Documents/uwaterloo/cs341'
-let g:netrw_dirhist_6='/home/soloman_davis/Documents/uwaterloo/cs341/a1'
-let g:netrw_dirhist_7='/home/soloman_davis/Documents/uwaterloo'
-let g:netrw_dirhist_8='/home/soloman_davis/.local/lib/python2.7/site-packages/powerline/config_files'
-let g:netrw_dirhist_9='/home/soloman_davis/.local/lib/python2.7/site-packages/powerline/config_files/colorschemes'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/ziyadalyafi/.config/nvim'
