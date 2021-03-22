@@ -13,9 +13,9 @@ syntax on
 set shell=/bin/zsh
 
 " Chroma theme
-set termguicolors
-let g:chroma_nontext_dark = 1
-colorscheme chroma
+" set termguicolors
+" let g:chroma_nontext_dark = 1
+" colorscheme chroma
 
 " Ayu theme - I can't decide fml
 " set termguicolors     " enable true colors support
@@ -69,7 +69,7 @@ map <Leader>ff :NERDTreeFocus<CR>
 
 " Airline
 let g:airline_powerline_fonts=1
-let g:airline_theme='badwolf'
+let g:airline_theme='dracula'
 
 " Easy Align mappings https://github.com/junegunn/vim-easy-align
 " vipga "
@@ -268,4 +268,13 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 " Rust support
 Plug 'rust-lang/rust.vim'
 
+" Dracula theme
+Plug 'dracula/vim', {'as':'dracula'}
+
 call plug#end()
+
+
+" Dracula colorscheme
+" Must be placed after plug#end() as per dracula-vim instructions
+set termguicolors
+colorscheme dracula
