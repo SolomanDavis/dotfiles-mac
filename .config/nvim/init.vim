@@ -6,7 +6,7 @@ set number
 set smartindent
 set cursorline
 
-filetype plugin on
+filetype plugin indent on
 syntax on
 
 " Set default shell to zsh
@@ -185,6 +185,10 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Set python path for faster startup when switching between virtualenvs
 let g:python3_host_prog = '/Users/ziyadalyafi/.pyenv/versions/py3nvim/bin/python'
 
+" vim-go can get slow with these options enabled
+let g:go_highlight_structs = 0
+let g:go_highlight_interfaces = 0
+let g:go_highlight_operators = 0
 
 " Plugins with vim-plug
 call plug#begin('~/.config/nvim/plugged')
@@ -267,6 +271,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 " Rust support
 Plug 'rust-lang/rust.vim'
+
+" Bdelete - better buffer deletion commands
+Plug 'Asheq/close-buffers.vim'
 
 " Dracula theme
 Plug 'dracula/vim', {'as':'dracula'}
