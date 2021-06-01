@@ -247,7 +247,6 @@ Plug 'xolox/vim-misc'
 
 " Conquerer or Completetion for autocompletion using LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
 
 " Scala Syntax Highlighting
 Plug 'derekwyatt/vim-scala'
