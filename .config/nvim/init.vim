@@ -266,7 +266,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'https://github.com/tpope/vim-capslock'
 
 " Markdown Preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }  }
 
 " Rust support
 Plug 'rust-lang/rust.vim'
