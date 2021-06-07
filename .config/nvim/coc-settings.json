@@ -1,3 +1,5 @@
 {
-    "java.home": "~/.sdkman/candidates/java/current/"
+    "java.home": "~/.sdkman/candidates/java/current/",
+
+    "java.jdt.ls.vmargs": "-javaagent:/Users/ziyadalyafi/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.20/18bcea7d5df4d49227b4a0743a536208ce4825bb/lombok-1.18.20.jar"
 }
